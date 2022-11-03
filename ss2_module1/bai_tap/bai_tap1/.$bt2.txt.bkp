@@ -1,0 +1,8 @@
+Begin
+    Input usd	
+	 
+	 N = Usd * 23000
+	
+	Output N
+	 
+End	 

@@ -1,0 +1,15 @@
+Begin
+	
+	Input a,b,c
+	If ( a>b ) and ( a>c )
+	Output "a max"
+	End If
+	Else If (a<b) and (b>c)
+	Output "b max"
+	End If 
+	Else If (a<b) and (c>b)
+	Output " c max"
+	End If
+
+End	
+	

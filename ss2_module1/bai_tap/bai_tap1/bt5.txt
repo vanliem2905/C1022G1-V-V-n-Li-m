@@ -1,0 +1,15 @@
+Begin
+	
+	Input n
+	
+	If (n => 75)
+	Output "loại A"
+	Else If (60 <= n )
+	Output "loại B"
+	Else If  (45 <= n)
+	Output "loại C"
+	Else If (35 <= n)
+	Output "loại D"
+	Else Output "loại E"
+	
+End
