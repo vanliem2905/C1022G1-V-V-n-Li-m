@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+table{
+    text-align: right;
+    background-color: white;
+}
+.liem{
+    color: white;
+    background-color: red;
+    text-align: center;
+
+}
+th{
+    text-align: left;
+}
