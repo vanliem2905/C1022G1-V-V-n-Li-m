@@ -9,6 +9,8 @@
     <input type="number" id="so2" placeholder="Nhập số thứ 2">
     <button onclick="Cong()">Cộng</button>
     <button onclick="Tru()">Trừ</button>
+    <button onclick="Tich()">Nhân</button>
+    <button onclick="Thuong()">Chia</button>
     <h3>Resutl</h3>
     <div id="resutl"></div>
     <script>
@@ -23,6 +25,20 @@
             let so1 = document.getElementById('so1').value;
             let so2 = document.getElementById('so2').value;
             let result = Number(so1) - Number(so2);
+            document.getElementById("resutl").innerHTML = result;
+
+        }
+        function Tich() {
+            let so1 = document.getElementById('so1').value;
+            let so2 = document.getElementById('so2').value;
+            let result = Number(so1) * Number(so2);
+            document.getElementById("resutl").innerHTML = result;
+
+        }
+        function Thuong() {
+            let so1 = document.getElementById('so1').value;
+            let so2 = document.getElementById('so2').value;
+            let result = Number(so1) / Number(so2);
             document.getElementById("resutl").innerHTML = result;
 
         }
