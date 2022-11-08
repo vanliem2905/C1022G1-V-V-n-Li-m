@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <label>Amount</label>
+    <input type="text" id="Amount"/> &nbsp;
+    <label>From Currency</label>
+    <select id="From">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select> &nbsp;
+    <label>To Currency</label>
+    <select id="To Currency">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select> &nbsp;
+    <button onclick="changeMoney()">Convert</button>
+    <div id="tiendo"></div>
+    <script>
+        let Result='';
+        function changeMoney() {
+            let Amount = document.getElementById("Amount").value;
+            let FromC = document.getElementById("From").value;
+            let To = document.getElementById("To Currency").value;
+            console.log(Amount)
+            console.log(FromC)
+            console.log(To)
+
+            if (FromC == "USD" && To == "VND") {
+                Result = "Result: " + (Amount * 23000) + "Đ";
+            } else if (FromC == "VND" && To == "USD") {
+                Result = "Result: " + (Amount / 23000) + " $";
+            } else if (FromC == "VND") {
+                Result = "Result: " + Amount + "Đ"
+            } else {
+                Result = "Result: " + Amount + "$"
+            }
+            console.log(Result)
+            document.getElementById("tiendo").innerHTML = Result;
+        }
+    </script>
+
+
+
+
+</body>
+</html>

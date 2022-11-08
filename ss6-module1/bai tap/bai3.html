@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cộng Trừ</title>
+</head>
+<body>
+    <input type="number" id="so1" placeholder="Nhập số thứ nhất">
+    <input type="number" id="so2" placeholder="Nhập số thứ 2">
+    <button onclick="Cong()">Cộng</button>
+    <button onclick="Tru()">Trừ</button>
+    <h3>Resutl</h3>
+    <div id="resutl"></div>
+    <script>
+        function Cong() {
+            let so1 = document.getElementById('so1').value;
+            let so2 = document.getElementById('so2').value;
+            let result = Number(so1) + Number(so2);
+            document.getElementById("resutl").innerHTML = result;
+
+        }
+        function Tru() {
+            let so1 = document.getElementById('so1').value;
+            let so2 = document.getElementById('so2').value;
+            let result = Number(so1) - Number(so2);
+            document.getElementById("resutl").innerHTML = result;
+
+        }
+    </script>
+
+</body>
+</html>
