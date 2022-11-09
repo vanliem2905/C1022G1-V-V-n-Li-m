@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ Số BMI</title>
+</head>
+<body>
+<h2>Hãy Nhập Chỉ Số Của Bạn:</h2><br>
+    <label>Cân Nặng</label>
+    <input type="text" id="weight">
+    <br>
+    <br>
+    <label>Chiều cao</label>
+    <input type="text" id="height"><br>
+    <br>
+    <br>
+    <button>Kiểm Tra</button>
+    <div id="bmi"></div>
+<script>
+        function ketQua(){
+            let result;
+            let weight = document.getElementById('weight'.value);
+            let height = document.getElementById('height'.value);
+            result = weight / ( height ^ 2 );
+
+
+            if (bmi < 18)
+                document.write("Underweight");
+            else if (bmi < 25.0)
+                document.write("Normal");
+            else if (bmi < 30.0)
+                document.write("Overweight");
+            else
+                document.write("Obese");
+
+        }
+        document.getElementById('bmi').innerHTML =;
+
+</script>
+</body>
+</html>
