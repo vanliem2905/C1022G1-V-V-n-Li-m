@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiền Thuế Thu Nhập</title>
+</head>
+<body>
+<script>
+    let a= +prompt("Nhập Thu Nhập Của Bạn")
+    let tienHh
+    if(a>80000000){
+        tienHh = a * 0.35;
+        document.write("Thuế Thu Nhập Của Bạn Là : " + tienHh);
+    } else if (a>=52000000){
+        tienHh = a * 0.3;
+        document.write("Thuế Thu Nhập Của Bạn Là : " + tienHh);
+
+    }else if (a>=32000000){
+        tienHh = a * 0.25;
+        document.write("Thuế Thu Nhập Của Bạn Là : " + tienHh);
+
+    }else if (a>=18000000){
+        tienHh = a * 0.2;
+        document.write("Thuế Thu Nhập Của Bạn Là : " + tienHh);
+
+    }else if (a>=10000000){
+        tienHh = a * 0.15;
+        document.write("Thuế Thu Nhập Của Bạn Là : " + tienHh);
+
+    }else if (a>=5000000){
+        tienHh = a * 0.1;
+        document.write("Thuế Thu Nhập Của Bạn Là : " + tienHh);
+
+    } else {
+        document.write("Không Tính Thuế Thu Nhập Đối Với Cá Nhân TN Dưới 5Tr ")
+    }
+</script>
+</body>
+</html>

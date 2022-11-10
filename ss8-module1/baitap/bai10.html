@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Tiền Điện</title>
+</head>
+<body>
+<script>
+    let soDien = +prompt("Nhập Số Điện Nhà Bạn")
+    let tienDien
+    if(soDien>401){
+        tienDien = soDien * 2927;
+        document.write("Tiền điện của bạn là: " + tienDien);
+    } else if (soDien>=301){
+        tienDien = soDien * 2834;
+        document.write("Tiền điện của bạn là: " + tienDien);
+
+    }else if (soDien>=201){
+        tienDien = soDien * 2536;
+        document.write("Tiền điện của bạn là: " + tienDien);
+    }else if (soDien>=101){
+        tienDien = soDien * 2014;
+        document.write("Tiền điện của bạn là: " + tienDien);
+    }else if (soDien>=51){
+        tienDien = soDien * 1734;
+        document.write("Tiền điện của bạn là: " + tienDien);
+    }else {
+        tienDien = soDien * 1678;
+        document.write("Tiền điện của bạn là: " + tienDien);
+    }
+
+</script>
+
+</body>
+</html>
