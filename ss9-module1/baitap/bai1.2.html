@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tempt</title>
+</head>
+<body>
+<div id="nhietDo"></div>
+<script>
+    for (let i=0;i<100;i++){
+        let nhietDo =+prompt('Nhập nhiệt độ hiện tại: ')
+        if (nhietDo>100) alert('Bạn cần phải tăng nhiệt độ')
+        else if (nhietDo<20) alert('Bạn cần phải tăng nhiệt độ')
+        else {alert('Nhiệt độ phù hợp')
+            break;
+        }
+    }
+    document.getElementById(nhietDo).innerHTML= nhietDo;
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body background="url:">
+<h2>Bảng Cửu Chương</h2>
+<script>
+    let i;
+    let f;
+    let ct ='';
+   ct=ct +'<table border="2" cellpadding="0" cellspacing="8">';
+    for (i=1;i<=9;i++){
+        ct=ct + '<tr>';
+        for (f=2;f<10;f++){
+            ct=ct+'<td>' +f+'x'+i+'='+i*f+ '</td>';
+        }
+        ct= ct+'</tr>';
+    }
+    ct = ct+'</table>';
+    document.write(ct);
+</script>
+<img src="https://i.vdoc.vn/data/image/2017/03/25/bo-hinh-anh-chuc-thi-tot-voi-nhung-cau-chuc-hay-nhat-17.jpg" alt="Trulli" width="484" height="211">
+</body>
+</html>

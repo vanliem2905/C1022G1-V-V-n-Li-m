@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giai thừa</title>
+
+</head>
+<body>
+<script>
+    let  num= +prompt("Nhập số cần tính")
+    function giaiThua(num)
+    {
+    let result = num;
+    if (num === 0 || num === 1) {
+        return 1;
+    }
+    while(num > 1) {
+        num--;
+        result *= num;
+    }
+    return result;
+    }
+    let ketQua =  giaiThua(num)
+    document.write(ketQua)
+</script>
+
+</body>
+</html>

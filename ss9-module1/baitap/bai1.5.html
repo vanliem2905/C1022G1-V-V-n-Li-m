@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="b2"></div>
+<script>
+    let a=0;
+    let b=1;
+    let e=1;
+    let c=a+b;
+    for (let i=3; i<=20;i++){
+        a=b;
+        b=c;
+        c=a+b;
+        e+=b;
+    }
+    document.getElementById('b2').innerHTML=e;
+</script>
+</body>
+</html>

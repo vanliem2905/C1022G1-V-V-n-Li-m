@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim so 99</title>
+</head>
+<body>
+<div id="tim"></div>
+<script>
+    let a='';
+    for (let i=1;i<=100;i++){
+        a= a + i.toString()+' ';
+        if (i==99){
+            alert('Bạn đã hoàn thành')
+            break;
+        }
+    }
+    document.getElementById('tim').innerHTML=a;
+</script>
+</body>
+</html>
