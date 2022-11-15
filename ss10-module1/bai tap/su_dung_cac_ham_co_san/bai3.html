@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("Nhập vào một chuỗi")
+    let CHUHOA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let CHUTHUONG = "abcdefghijklmnopqrstuvwxyz"
+    let ketqua = []
+    for (let i=0; i<chuoi.length; i++){
+        if(CHUHOA.indexOf(chuoi[i]) !== -1){
+            ketqua.push(chuoi[i].toLowerCase())
+        }else if(CHUTHUONG.indexOf(chuoi[i] !== -1)){
+            ketqua.push(chuoi[i].toUpperCase())
+        }else{
+            ketqua.push(chuoi[i])
+        }
+    }
+    alert(ketqua.join(""))
+</script>
+</body>
+</html>
