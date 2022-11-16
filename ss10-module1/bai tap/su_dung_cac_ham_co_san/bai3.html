@@ -7,13 +7,13 @@
 <body>
 <script>
     let chuoi = prompt("Nhập vào một chuỗi")
-    let CHUHOA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    let CHUTHUONG = "abcdefghijklmnopqrstuvwxyz"
+    let chuHoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let chuThuong = "abcdefghijklmnopqrstuvwxyz"
     let ketqua = []
     for (let i=0; i<chuoi.length; i++){
-        if(CHUHOA.indexOf(chuoi[i]) !== -1){
+        if(chuHoa.indexOf(chuoi[i]) !== -1){
             ketqua.push(chuoi[i].toLowerCase())
-        }else if(CHUTHUONG.indexOf(chuoi[i] !== -1)){
+        }else if(chuThuong.indexOf(chuoi[i] !== -1)){
             ketqua.push(chuoi[i].toUpperCase())
         }else{
             ketqua.push(chuoi[i])

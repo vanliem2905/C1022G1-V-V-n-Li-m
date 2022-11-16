@@ -6,23 +6,28 @@
 </head>
 <body>
 <script>
-    let mang = [], boo = true, vitri =[],dem = 0
-    let mangnew = []
-
-    for (let i = 0; i < 10; i++) {
+    let mang = [], flag = true;
+    let mangNew = [];
+    let v=5;
+    for (let i = 0; i < 5; i++) {
         mang[i] = prompt("Nhập số vào mảng")
-        if(mang[i] == "V"){
-            boo =false
-        }
 
-        if (mang[i] != "V"){
-            mangnew.push(mang[i])
+        if(mang[i] == v){
+            flag=false
+        }
+        if (mang[i] != v){
+            mangNew.push(mang[i])
         }
     }
     document.write("Mang = ["+mang+"]<br>")
-    if(boo == false){
-        document.write("Đã xóa phần tử V. Mang = ["+mangnew+"]<br>")
+    if(b == false){
+        document.write("Đã xóa phần tử v. Mang = ["+mangNew+"]<br>")
+        
     }
+    //demo indexOf
+    // let arr = [1,2,3,1];
+    // let check = arr.indexOf(15);
+    // alert(check)
 </script>
 </body>
 </html>
