@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+<script>
+    function kiemTraTrongMang(ky_tu,mang) {
+        let dem=0
+        for (let i=0; i<mang.length; i++){
+            if (ky_tu == mang[i]) {
+                dem++
+            }
+        }
+        if(dem>0){
+            return dem
+        }
+        return -1
+    }
+        let mang = []
+        let n=prompt("Số Phần tử bạn muốn nhập")
+        let ky_tu = prompt("Nhập vào 1 ký tự bất kỳ")
+        for (let i=0;i<n;i++){
+            mang[i]=prompt("Nhập vào phần từ thứ"+ i)
+        }
+        document.write("Mảng gồm ["+mang+"]<br>")
+        let kiem_tra = kiemTraTrongMang(ky_tu,mang)
+        if (kiem_tra >0){
+            document.write("Có "+kiem_tra+" ký tự "+ky_tu+" trong mảng")
+        }else{
+            document.write("Không có dữ liệu trong mảng")
+
+    }
+
+</script>
+</body>
+</html>

@@ -6,22 +6,19 @@
 </head>
 <body>
 <script>
-    let mang = new Array(prompt("Nhập vào một chuỗi"))
-    let mangFix = []
+    let str = prompt("Nhập vào một chuỗi");
+    let mang = str.split('');
+    console.log(mang)
 
     document.write("Mảng gồm ["+mang+"]<br>")
     for (let i=0; i<mang.length ; i++){
-        for (let j=0; j<mang[i].length; j++){
-            if(mang[i][j] == "-"){
-                mang[i][j] = "_"
-                mangFix.push("_")
-            }else{
-                mangFix.push(mang[i][j])
-            }
-
+        if(i=="-"){
+            mang[i]="_";
         }
+
     }
-    document.write("Mảng sửa gồm ["+mangFix.join("")+"]<br>")
+    let mangFix=mang.join("")
+    document.write(mangFix)
 
 </script>
 </body>

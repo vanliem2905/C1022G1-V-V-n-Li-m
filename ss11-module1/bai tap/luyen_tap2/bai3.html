@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let  num= +prompt("Nhập số cần tính")
+    function giaiThua(num)
+    {
+        //C1
+        // let result = num;
+        // if (num === 0 || num === 1) {
+        //     return 1;
+        // }
+        // while(num > 1) {
+        //     num--;
+        //     result *= num;
+        // }
+        // return result;
+        //C2
+        if (num==2)
+            return 2
+        return num*giaiThua(num-1)
+    }
+    let ketQua =  giaiThua(num)
+    document.write(ketQua)
+</script>
+</body>
+</html>
