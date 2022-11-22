@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="rectangle"></div>
-<canvas id="canvasRectangle" width="300px" height="300px"></canvas>
+<canvas id="canvasRectangle" width="200px" height="200px"></canvas>
 <script>
     class Rectangle{
         constructor(dai,rong) {
@@ -38,10 +38,10 @@
         }
     }
     let rectangle=new Rectangle(100 , 50);
-    rectangle.setdai(200)
-    rectangle.setrong(100)
-    let a=rectangle.getdai()
-    let b=rectangle.setrong()
+    rectangle.setdai(20)
+    rectangle.setrong(10)
+    let a=rectangle.getdai(10)
+    let b=rectangle.setrong(5)
 
     document.getElementById('rectangle').innerHTML = 'Diện tích là: ' + rectangle.area() + '. Chu vi là: ' + rectangle.perimeter();
     document.write("<br><canvas id=\"canvasRectangle\" width=dai height=rong style=\"border:1px solid red;\"></canvas>")
