@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= +prompt("Hãy Nhập Tiền Lương CỦa Bạn: ")
+    let thue;
+    let tien_thuc_nhan;
+    if (a>=15000000){
+        thue=a*0.2;
+        tien_thuc_nhan=a-thue;
+        document.write("Tiền lương thực nhận của bạn là: "+ tien_thuc_nhan)
+    }else if (a<15000000){
+        thue=a*0.15;
+        tien_thuc_nhan=a-thue;
+        document.write("Tiền lương thực nhận của bạn là:" + tien_thuc_nhan)
+    }else if(a<7000000){
+        thue=a*0.1;
+        tien_thuc_nhan=a-thue;
+        document.write("Tiền lương thực nhận của bạn là:" + tien_thuc_nhan)
+    }
+</script>
+
+</body>
+</html>

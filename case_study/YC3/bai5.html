@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let gia=0;
+    let mon =1;
+    let menu;
+    let a = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    alert('Menu là: '+a);
+    while (mon > 0 && mon < 7) {
+        mon = +prompt("Nhập lựa chọn của bạn(1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)): ");
+        switch (mon) {
+            case 1:
+                menu = +prompt("Nhập số lượng");
+                gia = gia + menu * 10000;
+                break;
+            case 2:
+                menu = +prompt("Nhập số lượng");
+                gia = gia + menu * 20000;
+                break;
+            case 3:
+                menu = +prompt("Nhập số lượng");
+                gia = gia + menu * 25000;
+                break;
+            case 4:
+                menu = +prompt("Nhập số lượng");
+                gia = gia + menu * 25000;
+                break;
+            case 5:
+                menu = +prompt("Nhập số lượng");
+                gia = gia + menu * 5000;
+                break;
+            case 6:
+                menu = +prompt("Nhập số lượng");
+                gia = gia + menu * 5000;
+                break;
+            case 7:
+                break;
+            default: {alert("Lựa chọn không đúng");}
+        }
+    }
+    alert("Giá tiền thanh toán: "+ gia+ " đồng")
+</script>
+
+</body>
+</html>

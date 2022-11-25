@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<!--<input type="text" id="number">-->
+<!--<input type="kiemtra" value="Kiểm tra" onclick="check()">-->
+<!--<div id="chuSo"></div>-->
+<div id="check"></div>
+<script>
+    // //Cách 1
+    // let number=document.getElementById("chuSo")
+    // // console.log(chuSo.value)
+    // let number=['1','2','3','4','5','6'];
+    // let chuSo=['Một','Hai','Ba','Bốn','Năm','Sáu'];
+    // document.write("Chỉ có thể dịch các từ["+chuSo.join(" ")+"]");
+    // let dem=0;
+    // function check() {
+    //     for (let i=0;i<number.length;i++){
+    //         if(number[i]=chuSo.value){
+    //             dem=0
+    //             document.getElementById("number").innerHTML= chuSo[i];
+    //             break
+    //         }else {
+    //             dem++
+    //         }
+    //     } if (dem!=0){
+    //         alert("Không có dữ liệu")
+    //     }
+    //
+    // }
+    //Cách swicth case
+    let number = +prompt("Nhập số cần kiểm tra");
+    let dich = number;
+    switch (dich) {
+        case 1:
+            dich = "Một";
+            break;
+        case 2:
+            dich = "Hai";
+            break;
+        case 3:
+            dich = "Ba";
+            break;
+        case 4:
+            dich = "Bốn";
+            break;
+        case 5:
+            dich = "Năm";
+            break;
+        case 6:
+            dich = "Sáu";
+            break;
+        case  7:
+            dich = "Bảy";
+    }
+    document.getElementById("check").innerHTML = "Dịch thành chữ là " + dich;
+
+
+</script>
+</body>
+</html>

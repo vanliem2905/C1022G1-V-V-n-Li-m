@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyên Âm</title>
+</head>
+<body>
+<div id="nguyenAm"></div>
+<script>
+    let a= prompt("Nhập Kí Tự Cần Tìm")
+    let chuoi=['a','b','c','d','e','f','g','h','A','B','C','D','E','F','G','H'];
+    let result=" ";
+    if (chuoi.includes(a)){
+        result="Đó là nguyên âm"
+    }else {
+        result="Đó là phụ âm"
+    }
+    document.getElementById("nguyenAm").innerHTML=result;
+
+
+</script>
+</body>
+</html>

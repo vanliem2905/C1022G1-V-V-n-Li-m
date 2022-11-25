@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<div id="bai2"></div>
+<script>
+    let arr = [7, 2, 5, 3, 5, 3];
+    let arr1 = [7, 2, 5, 3, 5, 4, 6, 3];
+    let newArr = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr.indexOf(arr1[i]) == -1) {
+            newArr.push(arr1[i]);
+        }
+    }
+    document.getElementById("bai2").innerHTML="missValue: ["+newArr+"]";
+
+
+</script>
+</body>
+</html>
