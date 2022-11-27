@@ -5,19 +5,28 @@
     <title>Hình Chữ Nhật</title>
 </head>
 <body>
+<div id="bai1"></div>
 <script>
-    function hinh_chu_nhat() {
-        for (let i = 0; i<5; i++){
-            for (let j=0;j<=i;j++){
-                let sao = "*"
-                //console.log(sao)
-                document.write(sao)
+    let x=+prompt('Nhập chiều dài: ')
+    let y=+prompt('Nhập chiều rộng: ')
+    let i,j;
+    let result='';
+    for (i=0;i<x;i++){
+        if (i==0||i==x-1){
+            for (j=0;j<y;j++){
+                result=result+'*'
             }
-            document.write("<br>")
+            result=result+'<br>'
         }
-
+        else {
+            result=result+'*'
+            for (j=0;j<y-2;j++){
+                result=result+ '&ensp;'
+            }
+            result=result+'*'+'<br>'
+        }
     }
-    document.write("<div style='width: 50px' align='right'>")
+    document.getElementById('bai1').innerHTML=result
 </script>
 </body>
 </html>

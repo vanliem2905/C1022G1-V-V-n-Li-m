@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập chuỗi kí tự :") ;
+    let str2 = prompt("Nhập chuỗi kí tự :");
+    let mang1 = str.split('');
+    let mang2 = str2.split('');
+    let newArr = [];
+    for (let i =0 ; i<mang2.length;i++){
+        if(mang1.indexOf(mang2[i])!=-1){
+            newArr.push(mang2[i]);
+            mang1.splice(mang1.indexOf(mang2[i]),1);
+        }
+    }
+    document.writeln(newArr.length);
+</script>
+</body>
+</html>
